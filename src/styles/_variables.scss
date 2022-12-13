@@ -1,0 +1,97 @@
+// colors
+$black: #1d1f1c;
+$red: #ee6666;
+$blue: #5470c6;
+$light-blue2: #258ddb;
+$green: #3ba272;
+$sky: #73c0de;
+$light-green: #91cc75;
+$purple: #8378ea;
+$yellow: #fac858;
+$pink: #ea7ccc;
+
+$bg1: #fff;
+$bg2: #f9fafb;
+$bg3: rgb(236, 242, 255);
+
+/*반응형 화면 크기*/
+$breakpoint-mobile: 500px;
+$breakpoint-tablet: 770px;
+$breakpoint-desktop: 1440px;
+
+@mixin mobile2 {
+  @media (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+@mixin flex($direction ,$justify, $align){
+  display: flex;
+  flex-direction: $direction;
+  @if ($justify != '') {
+    justify-content: $justify;
+  }
+  @if ($align != '') {
+    align-items: $align;
+  }
+}
+
+@mixin position($top, $right, $bottom, $left){
+  @if( $top != '') {
+    top: $top;
+  }
+  @if( $left != '') {
+    left: $left;
+  }
+  @if( $right != '') {
+    right: $right;
+  }
+  @if( $bottom != '') {
+    bottom: $bottom;
+  }
+}
+
+@mixin font($size, $weight){
+    @if($size != 0){
+      font-size: $size;
+    }
+    @if($weight != 0){
+      font-weight: $weight;
+    }
+}
+
+@mixin shadowBox {
+  box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
+  background: #fff;
+  border-radius: 2%;
+}
+
+@mixin ballon {
+  padding: 13px;
+  background-color: #eee;
+  border-radius: 15px;
+  position: relative;
+}
+
+@mixin ballonAfter{
+  border-top:16px solid #eee; 
+  border-left: 25px solid transparent; 
+  border-right: 0px solid transparent; 
+  border-bottom: 0px solid transparent; 
+  content:""; 
+  position:absolute;
+  top:15px;
+  left:-18px; 
+}
