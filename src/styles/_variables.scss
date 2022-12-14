@@ -78,20 +78,3 @@ $breakpoint-desktop: 1440px;
   border-radius: 2%;
 }
 
-@mixin ballon {
-  padding: 13px;
-  background-color: #eee;
-  border-radius: 15px;
-  position: relative;
-}
-
-@mixin ballonAfter{
-  border-top:16px solid #eee; 
-  border-left: 25px solid transparent; 
-  border-right: 0px solid transparent; 
-  border-bottom: 0px solid transparent; 
-  content:""; 
-  position:absolute;
-  top:15px;
-  left:-18px; 
-}
