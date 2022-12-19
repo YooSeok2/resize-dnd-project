@@ -9,7 +9,6 @@ const ShadowEffect = css`
 export const DndBox = styled.div`
   background-color: #fff;
   cursor: grab;
-  margin-left: 30px;
   ${ShadowEffect};
   position: relative;
   :active {
@@ -23,7 +22,19 @@ export const ResizeBox = styled.div`
   width: 20px;
   height: 20px;
   background-color: red;
+  // 우하단
   top: calc(100% - 20px);
   left: calc(100% - 20px);
+  // 좌상단
+  /////////////
+  // 우상단
+  /* left: calc(100% - 20px); */
+  // 좌하단
+   /* top: calc(100% - 20px); */
+
+
+  // 커서: 좌상단, 우하단
   cursor: se-resize;
+  // 커서: 우상단, 좌하단
+  /* cursor: sw-resize; */
 `

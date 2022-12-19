@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Drag from '../components/Drag'
 import DragAndDrop from '../components/DragAndDrop'
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       </Head>
 
       <main className='main'>
+          {/* <Drag /> */}
           <DragAndDrop />
       </main>
     </div>
