@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Drag from '../components/Drag'
-import DragAndDrop from '../components/DragAndDrop'
+import DragAndDrop from '../components/DragAndDrop';
+import KanbanDragAndDrop from '../components/KanbanDragAndDrop';
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
 
       <main className='main'>
           {/* <Drag /> */}
-          <DragAndDrop />
+          {/* <DragAndDrop /> */}
+          <KanbanDragAndDrop/>
       </main>
     </div>
   )

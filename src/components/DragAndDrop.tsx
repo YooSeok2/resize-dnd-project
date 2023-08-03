@@ -1,7 +1,7 @@
 
 import { useEffect, useMemo, useState } from 'react';
 import { DragAlphabet, DropAlphabet } from './Alphabet';
-import { registDND } from './DNDMatchExample.drag';
+import { registDND } from './MatchAlphabet';
 import { $ } from '../utils';
 
 const WORDS = [...Array(26)].map((_, i) => String.fromCharCode(i + 65));
@@ -19,7 +19,7 @@ export default function DNDMatchExample() {
   const reset = () => {
     setWords(getRandomWords(4));
     setCorrectWords([]);
-  };
+  }
 
   // CSR
   const [ready, setReady] = useState(false);

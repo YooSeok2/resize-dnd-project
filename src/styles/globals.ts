@@ -45,7 +45,6 @@ html,
 body{
   width: 100%;
   height: 100%;
-  background-color: #ecf2ff;
 }
 
 .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover, .ant-menu-horizontal:not(.ant-menu-dark) > 
